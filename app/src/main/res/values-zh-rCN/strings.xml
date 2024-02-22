@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hello AR</string>
-    <string name="depth_use_explanation">当在支持的设备上启用深度时，虚拟对象通过与真实世界相融合来适应环境。</string>
+    <string name="app_name">HelloAR Kotlin</string>
+    <string name="depth_use_explanation">当支持深度的设备上启用深度时，虚拟对象会根据实际环境进行调整，与现实世界融为一体。</string>
     <string name="button_text_enable_depth">启用</string>
     <string name="button_text_disable_depth">禁用</string>
-    <string name="options_title_with_depth">你的设备支持深度 API</string>
-    <string name="options_title_without_depth">你的设备不支持深度 API</string>
-    <string name="done">确定</string>
-    <string name="options_title_instant_placement">即时投放选项</string>
-    <string name="searching_planes">搜索表面……</string>
-    <string name="waiting_taps">点击表面以放置对象</string>
+    <string name="options_title_with_depth">您的设备支持深度</string>
+    <string name="options_title_without_depth">您的设备不支持深度</string>
+    <string name="done">完成</string>
+    <string name="searching_planes">正在搜索表面...</string>
+    <string name="waiting_taps">点击表面以放置物体</string>
+    
+    <string-array name="depth_options_array">
+        <item>启用深度</item>
+        <item>显示深度图</item>
+    </string-array>
+    <string name="options_title_instant_placement">即时放置选项</string>
+    <string-array name="instant_placement_options_array">
+        <item>启用即时放置</item>
+    </string-array>
 </resources>
