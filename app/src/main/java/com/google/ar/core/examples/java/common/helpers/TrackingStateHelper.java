@@ -24,17 +24,16 @@ import com.google.ar.core.TrackingState;
 /** Gets human readibly tracking failure reasons and suggested actions. */
 public final class TrackingStateHelper {
   private static final String INSUFFICIENT_FEATURES_MESSAGE =
-      "Can't find anything. Aim device at a surface with more texture or color.";
-  private static final String EXCESSIVE_MOTION_MESSAGE = "Moving too fast. Slow down.";
+      "找不到任何表面。确保你的设备对准具有更多纹理和色彩的表面";
+  private static final String EXCESSIVE_MOTION_MESSAGE = "移动速度过快，放慢点";
   private static final String INSUFFICIENT_LIGHT_MESSAGE =
-      "Too dark. Try moving to a well-lit area.";
+      "太暗了，请移到光线充足的地方";
   private static final String INSUFFICIENT_LIGHT_ANDROID_S_MESSAGE =
-      "Too dark. Try moving to a well-lit area."
-      + " Also, make sure the Block Camera is set to off in system settings.";
+      "太暗了，请移到光线充足的地方 也请确保在系统设置中开启摄像头";
   private static final String BAD_STATE_MESSAGE =
-      "Tracking lost due to bad internal state. Please try restarting the AR experience.";
+      "跟踪因内部状态不佳而丢失，请尝试重新启动应用";
   private static final String CAMERA_UNAVAILABLE_MESSAGE =
-      "Another app is using the camera. Tap on this app or try closing the other one.";
+      "另一个应用正在使用摄像头，点击此应用或尝试关闭其他应用";
   private static final int ANDROID_S_SDK_VERSION = 31;
 
   private final Activity activity;
@@ -85,6 +84,6 @@ public final class TrackingStateHelper {
       case CAMERA_UNAVAILABLE:
         return CAMERA_UNAVAILABLE_MESSAGE;
     }
-    return "Unknown tracking failure reason: " + reason;
+    return "未知的跟踪失败原因：" + reason;
   }
 }
